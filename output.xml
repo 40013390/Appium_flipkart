@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210128 10:58:44.417" rpa="false">
+<suite id="s1" name="Appium miniProject" source="C:\Users\CTEA\Testing\Robot_WorkspaceTesting\Appium miniProject">
+<suite id="s1-s1" name="Flipkart" source="C:\Users\CTEA\Testing\Robot_WorkspaceTesting\Appium miniProject\Flipkart">
+<suite id="s1-s1-s1" name="Flipkart testSuite" source="C:\Users\CTEA\Testing\Robot_WorkspaceTesting\Appium miniProject\Flipkart\Flipkart_testSuite.robot">
+<test id="s1-s1-s1-t1" name="TC2_VerifyPlaceOrder">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=realme</arg>
+<arg>appPackage=com.flipkart.android</arg>
+<arg>appActivity=com.flipkart.android.SplashActivity</arg>
+<arg>noReset=True</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:58:44.789" endtime="20210128 10:58:59.242"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:58:59.243" endtime="20210128 10:58:59.244"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@resource-id="com.flipkart.android:id/search_widget_textbox"]</arg>
+</arguments>
+<msg timestamp="20210128 10:58:59.245" level="INFO">Clicking element 'xpath=//*[@resource-id="com.flipkart.android:id/search_widget_textbox"]'.</msg>
+<status status="PASS" starttime="20210128 10:58:59.244" endtime="20210128 10:59:03.325"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@resource-id="com.flipkart.android:id/search_autoCompleteTextView"]</arg>
+<arg>Dell laptop i7 10th generation</arg>
+</arguments>
+<msg timestamp="20210128 10:59:03.327" level="INFO">Typing text 'Dell laptop i7 10th generation' into text field 'xpath=//*[@resource-id="com.flipkart.android:id/search_autoCompleteTextView"]'</msg>
+<status status="PASS" starttime="20210128 10:59:03.326" endtime="20210128 10:59:04.343"></status>
+</kw>
+<kw name="${i} IN RANGE [ 0 | 20 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>xpath=//*[contains(@text,"dell laptop i7 10th generation")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,"dell laptop i7 10th generation")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:04.346" level="INFO">Clicking element 'xpath=//*[contains(@text,"dell laptop i7 10th generation")]'.</msg>
+<status status="PASS" starttime="20210128 10:59:04.345" endtime="20210128 10:59:05.647"></status>
+</kw>
+<msg timestamp="20210128 10:59:05.647" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210128 10:59:04.344" endtime="20210128 10:59:05.647"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<msg timestamp="20210128 10:59:05.649" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210128 10:59:05.648" endtime="20210128 10:59:05.649"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:04.344" endtime="20210128 10:59:05.650"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:04.344" endtime="20210128 10:59:05.650"></status>
+</kw>
+<kw name="${i} IN RANGE [ 0 | 20 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>xpath=//*[contains(@text,"dell laptop i7 10th generation")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@text,"dell laptop i7 10th generation")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:05.653" level="INFO">Clicking element 'xpath=//*[contains(@text,"dell laptop i7 10th generation")]'.</msg>
+<status status="PASS" starttime="20210128 10:59:05.651" endtime="20210128 10:59:08.693"></status>
+</kw>
+<msg timestamp="20210128 10:59:08.693" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210128 10:59:05.651" endtime="20210128 10:59:08.693"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:08.694" endtime="20210128 10:59:10.072"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<msg timestamp="20210128 10:59:10.074" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210128 10:59:10.073" endtime="20210128 10:59:10.074"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:05.651" endtime="20210128 10:59:10.074"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:05.650" endtime="20210128 10:59:10.074"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>xpath=//*[@text="NOT NOW"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text="NOT NOW"]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:10.076" level="INFO">Clicking element 'xpath=//*[@text="NOT NOW"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:11.050" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:10.471" endtime="20210128 10:59:11.051"></status>
+</kw>
+<msg timestamp="20210128 10:59:11.053" level="FAIL">ValueError: Element locator 'xpath=//*[@text="NOT NOW"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:10.075" endtime="20210128 10:59:11.053"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:10.075" endtime="20210128 10:59:11.054"></status>
+</kw>
+<kw name="${i} IN RANGE [ 0 | 20 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:11.057" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:12.013" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:11.472" endtime="20210128 10:59:12.013"></status>
+</kw>
+<msg timestamp="20210128 10:59:12.014" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:11.056" endtime="20210128 10:59:12.015"></status>
+</kw>
+<msg timestamp="20210128 10:59:12.015" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"GO TO CART")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210128 10:59:11.055" endtime="20210128 10:59:12.015"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:12.017" level="INFO">Clicking element '//*[contains(@text,"ADD TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:13.045" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:12.501" endtime="20210128 10:59:13.045"></status>
+</kw>
+<msg timestamp="20210128 10:59:13.046" level="FAIL">ValueError: Element locator '//*[contains(@text,"ADD TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:12.016" endtime="20210128 10:59:13.047"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:12.015" endtime="20210128 10:59:13.047"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:13.049" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:14.144" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:13.697" endtime="20210128 10:59:14.145"></status>
+</kw>
+<msg timestamp="20210128 10:59:14.146" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:13.048" endtime="20210128 10:59:14.146"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:13.047" endtime="20210128 10:59:14.147"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:14.147" endtime="20210128 10:59:15.481"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:15.482" endtime="20210128 10:59:15.482"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:11.055" endtime="20210128 10:59:15.483"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:15.486" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:17.308" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:16.702" endtime="20210128 10:59:17.309"></status>
+</kw>
+<msg timestamp="20210128 10:59:17.310" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:15.484" endtime="20210128 10:59:17.310"></status>
+</kw>
+<msg timestamp="20210128 10:59:17.311" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"GO TO CART")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210128 10:59:15.483" endtime="20210128 10:59:17.311"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:17.313" level="INFO">Clicking element '//*[contains(@text,"ADD TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:18.289" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:17.660" endtime="20210128 10:59:18.289"></status>
+</kw>
+<msg timestamp="20210128 10:59:18.290" level="FAIL">ValueError: Element locator '//*[contains(@text,"ADD TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:17.312" endtime="20210128 10:59:18.291"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:17.311" endtime="20210128 10:59:18.291"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:18.293" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:19.281" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:18.551" endtime="20210128 10:59:19.281"></status>
+</kw>
+<msg timestamp="20210128 10:59:19.282" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:18.292" endtime="20210128 10:59:19.283"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:18.291" endtime="20210128 10:59:19.283"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:19.283" endtime="20210128 10:59:20.673"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:20.674" endtime="20210128 10:59:20.675"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:15.483" endtime="20210128 10:59:20.675"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:20.677" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:24.350" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:23.437" endtime="20210128 10:59:24.350"></status>
+</kw>
+<msg timestamp="20210128 10:59:24.351" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:20.676" endtime="20210128 10:59:24.352"></status>
+</kw>
+<msg timestamp="20210128 10:59:24.352" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"GO TO CART")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210128 10:59:20.675" endtime="20210128 10:59:24.352"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:24.354" level="INFO">Clicking element '//*[contains(@text,"ADD TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:26.148" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-9.png"&gt;&lt;img src="appium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:25.500" endtime="20210128 10:59:26.149"></status>
+</kw>
+<msg timestamp="20210128 10:59:26.150" level="FAIL">ValueError: Element locator '//*[contains(@text,"ADD TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:24.353" endtime="20210128 10:59:26.150"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:24.353" endtime="20210128 10:59:26.150"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:26.153" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:27.076" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-10.png"&gt;&lt;img src="appium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:26.496" endtime="20210128 10:59:27.077"></status>
+</kw>
+<msg timestamp="20210128 10:59:27.078" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:26.151" endtime="20210128 10:59:27.078"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:26.151" endtime="20210128 10:59:27.078"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:27.079" endtime="20210128 10:59:28.504"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:28.505" endtime="20210128 10:59:28.506"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:20.675" endtime="20210128 10:59:28.506"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:28.509" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:29.580" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-11.png"&gt;&lt;img src="appium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:28.984" endtime="20210128 10:59:29.581"></status>
+</kw>
+<msg timestamp="20210128 10:59:29.582" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:28.507" endtime="20210128 10:59:29.582"></status>
+</kw>
+<msg timestamp="20210128 10:59:29.583" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"GO TO CART")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210128 10:59:28.507" endtime="20210128 10:59:29.583"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:29.585" level="INFO">Clicking element '//*[contains(@text,"ADD TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:30.276" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-12.png"&gt;&lt;img src="appium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:29.859" endtime="20210128 10:59:30.276"></status>
+</kw>
+<msg timestamp="20210128 10:59:30.277" level="FAIL">ValueError: Element locator '//*[contains(@text,"ADD TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:29.584" endtime="20210128 10:59:30.277"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:29.583" endtime="20210128 10:59:30.278"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:30.280" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:32.396" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-13.png"&gt;&lt;img src="appium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:31.508" endtime="20210128 10:59:32.396"></status>
+</kw>
+<msg timestamp="20210128 10:59:32.398" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:30.279" endtime="20210128 10:59:32.398"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:30.278" endtime="20210128 10:59:32.398"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:32.398" endtime="20210128 10:59:33.756"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:33.757" endtime="20210128 10:59:33.758"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:28.507" endtime="20210128 10:59:33.758"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:33.761" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:35.042" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-14.png"&gt;&lt;img src="appium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:34.477" endtime="20210128 10:59:35.042"></status>
+</kw>
+<msg timestamp="20210128 10:59:35.043" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:33.759" endtime="20210128 10:59:35.044"></status>
+</kw>
+<msg timestamp="20210128 10:59:35.044" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"GO TO CART")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210128 10:59:33.759" endtime="20210128 10:59:35.044"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:35.047" level="INFO">Clicking element '//*[contains(@text,"ADD TO CART")]'.</msg>
+<status status="PASS" starttime="20210128 10:59:35.045" endtime="20210128 10:59:35.575"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:35.045" endtime="20210128 10:59:35.575"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:35.578" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:36.248" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-15.png"&gt;&lt;img src="appium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:35.780" endtime="20210128 10:59:36.249"></status>
+</kw>
+<msg timestamp="20210128 10:59:36.250" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:35.576" endtime="20210128 10:59:36.250"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:35.576" endtime="20210128 10:59:36.251"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:36.251" endtime="20210128 10:59:37.670"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:37.670" endtime="20210128 10:59:37.671"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:33.759" endtime="20210128 10:59:37.671"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:37.674" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<status status="PASS" starttime="20210128 10:59:37.672" endtime="20210128 10:59:39.753"></status>
+</kw>
+<msg timestamp="20210128 10:59:39.754" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210128 10:59:37.672" endtime="20210128 10:59:39.754"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"ADD TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:39.757" level="INFO">Clicking element '//*[contains(@text,"ADD TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:40.241" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-16.png"&gt;&lt;img src="appium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:39.848" endtime="20210128 10:59:40.241"></status>
+</kw>
+<msg timestamp="20210128 10:59:40.242" level="FAIL">ValueError: Element locator '//*[contains(@text,"ADD TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:39.755" endtime="20210128 10:59:40.243"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:39.754" endtime="20210128 10:59:40.243"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"GO TO CART")]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:40.245" level="INFO">Clicking element '//*[contains(@text,"GO TO CART")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:42.002" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-17.png"&gt;&lt;img src="appium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:41.462" endtime="20210128 10:59:42.003"></status>
+</kw>
+<msg timestamp="20210128 10:59:42.004" level="FAIL">ValueError: Element locator '//*[contains(@text,"GO TO CART")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:40.244" endtime="20210128 10:59:42.005"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:40.243" endtime="20210128 10:59:42.005"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+</arguments>
+<status status="PASS" starttime="20210128 10:59:42.005" endtime="20210128 10:59:43.381"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${OUTPUT}[0]'=='PASS'</arg>
+</arguments>
+<msg timestamp="20210128 10:59:43.383" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210128 10:59:43.382" endtime="20210128 10:59:43.383"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:37.672" endtime="20210128 10:59:43.383"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:11.054" endtime="20210128 10:59:43.383"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class="android.view.ViewGroup"]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:43.385" level="INFO">Clicking element 'xpath=//*[@class="android.view.ViewGroup"]'.</msg>
+<status status="PASS" starttime="20210128 10:59:43.384" endtime="20210128 10:59:43.641"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>xpath=//*[@text="Remove"]</arg>
+</arguments>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text="Remove"]</arg>
+</arguments>
+<msg timestamp="20210128 10:59:43.643" level="INFO">Clicking element 'xpath=//*[@text="Remove"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 10:59:44.231" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-18.png"&gt;&lt;img src="appium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210128 10:59:43.813" endtime="20210128 10:59:44.231"></status>
+</kw>
+<msg timestamp="20210128 10:59:44.232" level="FAIL">ValueError: Element locator 'xpath=//*[@text="Remove"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210128 10:59:43.642" endtime="20210128 10:59:44.233"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:59:43.641" endtime="20210128 10:59:44.233"></status>
+</kw>
+<status status="PASS" starttime="20210128 10:58:44.786" endtime="20210128 10:59:44.233" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210128 10:58:44.543" endtime="20210128 10:59:44.234"></status>
+</suite>
+<status status="PASS" starttime="20210128 10:58:44.539" endtime="20210128 10:59:44.237"></status>
+</suite>
+<status status="PASS" starttime="20210128 10:58:44.498" endtime="20210128 10:59:44.240"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Appium miniProject">Appium miniProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Flipkart">Appium miniProject.Flipkart</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Flipkart testSuite">Appium miniProject.Flipkart.Flipkart testSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
